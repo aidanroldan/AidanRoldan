@@ -1,23 +1,30 @@
 import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AboutSection from './AboutSection';
+import NavigationBar from './NavigationBar';
+import HeroSection from './HeroSection';
+import PortfolioSection from './PortfolioSection';
+import TestimonialsSection from './TestimonialsSection';
+import ContactForm from './ContactForm';
+import Footer from './Footer';
+
+// import Button from "react-bootstrap/Button";
+import 'bootstrap/dist/css/bootstrap.css';
+// import Alert from 'react-bootstrap/Alert';
+
+import { Button, Alert, Breadcrumb, Card } from 'react-bootstrap';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavigationBar />
+      <HeroSection />
+      <AboutSection />
+      <PortfolioSection />
+      <TestimonialsSection />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
