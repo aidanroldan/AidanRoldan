@@ -1,4 +1,6 @@
 import { Card, Row, Col, Container } from 'react-bootstrap';
+import LMS from './lms.png';
+import AF from './arduino.jpg'
 
 function PortfolioSection() {
   return (
@@ -8,7 +10,7 @@ function PortfolioSection() {
         {/* Repeat for each item in your portfolio */}
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="path-to-image" />
+          <Card.Img variant="top" src={LMS} />
             <Card.Body>
               <Card.Title>LMS</Card.Title>
               <Card.Text>
@@ -22,7 +24,7 @@ function PortfolioSection() {
 
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="path-to-image" />
+            <Card.Img variant="top" src={AF} />
             <Card.Body>
               <Card.Title>Arduino Friends</Card.Title>
               <Card.Text>
