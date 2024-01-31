@@ -22,7 +22,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <PortfolioSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <ContactForm />
       <Footer />
     </div>
